@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Charts by BERCIK — Market intelligence terminal</title>
+  <meta name="description" content="A market intelligence terminal. See what a company is doing and what is influencing its stock, beyond the charts and the news.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav squircle" id="nav">
+    <a class="brand" href="/" aria-label="Charts by BERCIK">
+      <span class="brand-main">Charts</span><span class="brand-sub">by BERCIK</span>
+    </a>
+    <nav class="nav-actions">
+      <a class="btn btn-ghost squircle-sm" href="https://charts.bercikgroup.com">Sign in</a>
+      <a class="btn btn-solid squircle-sm" href="#access">Request access</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" data-state="showcase">
+      <video class="hero-video" id="video" muted loop playsinline autoplay preload="auto"
+             data-showcase="assets/video/showcase.webm" data-film="assets/video/film.webm"
+             src="assets/video/showcase.webm" poster="assets/video/poster.webp"></video>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <button class="icon-btn play" id="play" type="button" aria-label="Play">
+        <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"/></svg>
+      </button>
+
+      <a class="scroll-cue" id="scrollCue" href="#next" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+
+      <div class="controls squircle" id="controls">
+        <button class="icon-btn" id="toggle" type="button" aria-label="Pause">
+          <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+          <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"/></svg>
+        </button>
+        <button class="icon-btn" id="close" type="button" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="statement cine" id="next">
+      <div class="cine-inner reveal">
+        <h2 class="display">The price is the last thing you see.</h2>
+        <p class="lead">It&rsquo;s the result of the research. Do it in one terminal, before you take a position.</p>
+      </div>
+    </section>
+
+    <section class="device desk">
+      <div class="stage">
+        <img src="assets/shots/laptop.webp" alt="Charts by BERCIK on a laptop, the Today page." width="2000" height="1125" loading="lazy">
+      </div>
+      <div class="device-text reveal">
+        <h2 class="title">One terminal for the research.</h2>
+        <p>Know what is going on with a company, and why it is moving, before you ever look at the chart.</p>
+      </div>
+    </section>
+
+    <section class="device phone">
+      <div class="stage">
+        <img src="assets/shots/phone.webp" alt="The Brief tab of the Charts by BERCIK iPhone app." width="1500" height="2000" loading="lazy">
+      </div>
+      <div class="device-text reveal">
+        <h2 class="title">And when you&rsquo;re on the go, the app.</h2>
+        <p>The same picture in your pocket, so you never act blind.</p>
+      </div>
+    </section>
+
+    <section class="audience">
+      <div class="panel">
+        <p class="display" id="lit">Don&rsquo;t go blind into the market. Trading doesn&rsquo;t need to be emotionally intense when you know why you traded.</p>
+      </div>
+    </section>
+
+    <section class="access cine" id="access">
+      <div class="reveal access-inner cine-inner">
+        <h2 class="display">Private beta. By invitation.</h2>
+        <a class="btn btn-light btn-lg squircle-sm" href="mailto:bercikgroup@gmail.com?subject=Charts%20by%20BERCIK%20invitation">Request access</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/" aria-label="Charts by BERCIK"><span class="brand-main">Charts</span><span class="brand-sub">by BERCIK</span></a>
+        <p>Market intelligence terminal.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <ul>
+          <li><a href="https://charts.bercikgroup.com">Sign in</a></li>
+          <li><a href="#access">Request access</a></li>
+          <li><a href="mailto:bercikgroup@gmail.com">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://charts.bercikgroup.com/legal/disclaimer">Disclaimer</a></li>
+          <li><a href="https://charts.bercikgroup.com/legal/terms">Terms</a></li>
+          <li><a href="https://charts.bercikgroup.com/legal/privacy">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BERCIK Group</span>
+      <span>Not investment advice. Prices are delayed.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
